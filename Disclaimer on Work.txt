@@ -1,0 +1,7 @@
+Disclaimer on Work: 
+Consulted the provided "Solutions" tab on Springboard at certain times to assist with 
+some of these exercises in order to verify work or become unstuck at critical moments 
+[NOT TO COPY DIRECTLY OR TO PLAGIARIZE]. MDN Webpages was also consulted at various times in accordance with
+the Springboard lectures in order to look up certain types and values for certain CSS properties. 
+
+

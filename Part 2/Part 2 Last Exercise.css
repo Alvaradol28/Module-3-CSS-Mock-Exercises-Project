@@ -1,0 +1,73 @@
+.GIFBoxes {
+    /*Largest Container for Code*/
+    display: flex;
+    /* inline-row flex*/
+    /*Consulted Solution Page^ for "flex" value*/
+    justify-content: space-around;
+    /*margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;*/
+    /*Margins not required?*/
+}
+
+.Box {
+    width: 360px;
+    height: 360px;
+    position: relative;
+    border-radius: 5px;
+    border: 10px, solid, rgb(244, 208, 143);
+    background-color: orange;
+    overflow: hidden;
+    /*overflow:hidden will hide caption as it flows into the parent element as it is absolute and will bleed into other elements
+    but is still relative to this class as the position is set to relative*/
+}
+
+.Border {
+    background-position: center;
+    width: 100%;
+    /*You want this element to be as big as its parent*/
+    height: 100%;
+    /*Same concept^ - The parent element margins are 360px X 360px*/
+    border-radius: 10px;
+    background-size: cover;
+    /*Image will cover whole element*/
+
+}
+
+.gif-1 {
+    background-image: url(images/Cat\ eating.gif);
+}
+
+.gif-2 {
+    background-image: url(images/dance.gif);
+}
+
+.gif-3 {
+    background-image: url(images/high\ five.gif);
+}
+
+.caption {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*Relative to .Box space above*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 360px;
+    /*You want the caption far away from view towards the bottom*/
+    background-color: rgba(0, 0, 0, 0.4);
+    /*rgba color borrowed from Solution tab*/
+    border-radius: 10px;
+    color: white;
+    transition: top 0.5s;
+    font-size: 3.4rem;
+    text-align: center;
+    /*Relative to the parent font-size 3x-size*/
+}
+
+.Box:hover .caption {
+    top: 0;
+
+}
